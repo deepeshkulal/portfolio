@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Deepesh Kulal Navoor, a software developer.">
+    <title>Deepesh Kulal Navoor | Portfolio</title>
+    <link id="theme-link" rel="stylesheet" href="light_theme.css"> <!-- Default to light theme -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <img id="theme-toggle" src="theme_change.png" alt="Toggle Theme" style="cursor: pointer; width: 30px; height: 30px;"/> 
+        </nav>
+    </header>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("0yPokw_fo2CezYtCw"); // Replace with your user ID
+        })();
+    </script>
+
+    <div class="transparent-bg">
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Deepesh Kulal Navoor</span></h1>
+                <p>A software developer passionate about creating seamless user experiences and impactful applications.</p>
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="https://drive.google.com/file/d/1_M2scQBveXz_3OJ9dP5XP5q_gTiZu2qS/view?usp=drive_link" target="_blank" class="btn-primary">View My Resume</a>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <h2><b>About Me</b></h2>
+            <p>I am a recent BTech graduate with a passion for software development. I have worked on various projects like Exam Desk, which helped me gain experience in [relevant technologies]. I am now looking for opportunities to apply my skills and grow in a professional environment.</p>
+        </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Exam Desk</h3>
+                <p>A web app that [brief description of what it does]. Developed using [technologies].</p>
+                <a href="https://github.com/deepeshkulal" class="btn-secondary" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>JavaScript (React, Node.js)</li>
+                <li>Python</li>
+                <li>HTML & CSS</li>
+                <li>Python</li>
+                <li>.Net</li>
+                <li>C,C++,C#</li>
+                <li>Version Control (Git)</li>
+                <li>Problem-Solving</li>
+            </ul>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Deepesh Kulal Navoor. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
