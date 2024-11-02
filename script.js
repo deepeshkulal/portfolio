@@ -6,32 +6,32 @@ document.querySelectorAll('nav a').forEach(anchor => {
             e.preventDefault(); 
             const target = document.querySelector(href);
             if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
+                const navHeight = document.querySelector('nav').offsetHeight; 
+                const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight; 
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
             }
         }
     });
 });
 
-// Get the theme toggle element and the link to the CSS file
 const themeToggle = document.getElementById('theme-toggle');
 const themeLink = document.getElementById('theme-link');
 
-// Initialize the current theme
-let currentTheme = 'light_theme.css'; // Set the default theme
+let currentTheme = 'light_theme.css'; 
 
-// Function to toggle the theme
 themeToggle.addEventListener('click', () => {
-    // Check the current theme and switch it
     if (currentTheme === 'light_theme.css') {
-        themeLink.href = 'dark_theme.css'; // Change to dark theme
+        themeLink.href = 'dark_theme.css'; 
         currentTheme = 'dark_theme.css';
     } else {
-        themeLink.href = 'light_theme.css'; // Change to light theme
+        themeLink.href = 'light_theme.css'; 
         currentTheme = 'light_theme.css';
     }
 });
 
-// Form submission handler
 document.querySelector('#contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -46,10 +46,9 @@ document.querySelector('#contact-form').addEventListener('submit', function(e) {
     })
     .then(function(response) {
         alert('Email sent successfully!');
-        // Optionally clear the form after sending
         e.target.reset();
     }, function(error) {
-        console.error('Error sending email:', error); // Log the error
+        console.error('Error sending email:', error); 
         alert('Failed to send email. Please try again later.');
     });
 });
