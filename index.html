@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Deepesh Kulal Navoor, a software developer showcasing projects, skills, and contact information.">
+    <meta name="keywords" content="Deepesh Kulal, portfolio, web developer, software engineer, projects">
+    <meta name="author" content="Deepesh Kulal Navoor">
+    <title>Deepesh Kulal Navoor | Portfolio</title>
+    <link id="theme-link" rel="stylesheet" href="light_theme.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 5px solid white;
+            box-shadow: 0 0 0 5px yellow;
+            animation: float 3s ease-in-out infinite;
+        }
+        .hero-section {
+            position: relative;
+            text-align: center;
+            background: linear-gradient(135deg, #0056b3 0%, #004080 100%);
+            color: #fff;
+            padding: 100px 20px;
+        }
+        .hero-section h1 {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <img id="theme-toggle" src="res/theme_change.png" alt="Toggle Theme" style="cursor: pointer; width: 30px; height: 30px;"/> 
+        </nav>
+    </header>
+
+    <div class="transparent-bg">
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <img src="res/dp blazzer.png" alt="Profile Picture" class="profile-pic">
+                <h1>Hi, I'm <span>Deepesh Kulal Navoor</span></h1>
+                <p>A software developer passionate about creating seamless user experiences and impactful applications.</p>
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="https://drive.google.com/file/d/1B8a97RxzisH6DBblsCfFhTsXZO_ol6LM/view?usp=sharing" target="_blank" class="btn-primary">View My Resume</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2><b>About Me</b></h2>
+            <p>I am a recent BTech graduate with a passion for software development. I have worked on various projects like Exam Desk, which helped me gain experience in software development. I am now looking for opportunities to apply my skills and grow in a professional environment.</p>
+        </section>
+
+        <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Tic Tac Toe</h3>
+            <div class="project-media">
+                <img src="res/tic_tac_toe.gif" alt="Tic Tac Toe Project GIF" class="project-gif">
+            </div>
+            <p>A classic game implemented with modern UI using JavaScript, HTML, and CSS.</p>
+            <a href="https://github.com/deepeshkulal" class="btn-secondary" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Whiteboard</h3>
+            <div class="project-media">
+                <img src="res/whiteboard.gif" alt="Whiteboard Project GIF" class="project-gif">
+            </div>
+            <p>A collaborative drawing tool built with canvas and real-time syncing capabilities.</p>
+            <a href="https://github.com/deepeshkulal" class="btn-secondary" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>WordCraft</h3>
+            <div class="project-media">
+                <img src="res/examdesk.gif" alt="Exam Desk GIF" class="project-gif">
+            </div>
+            <p>An Exam Management app that creates Exam timetable, seating arrangements, and invigilator assignment.</p>
+            <a href="https://github.com/mcspidey95/ExamDesk/releases" class="btn-secondary" target="_blank">View on GitHub</a>
+        </div>
+    </div>            
+</section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>HTML & CSS</li>
+                <li>.NET</li>
+                <li>C, C++, C#</li>
+                <li>Version Control (Git)</li>
+                <li>Problem-Solving</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:deepeshkulalnavoor2003@gmail.com">deepeshkulalnavoor2003@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/deepesh-kulal-navoor-3a120b212/" target="_blank">Deepesh Kulal Navoor</a></li>
+                <li>GitHub: <a href="https://github.com/deepeshkulal" target="_blank">deepeshkulal</a></li>
+                <li>Phone number: +91 8197013571</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Deepesh Kulal Navoor. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
